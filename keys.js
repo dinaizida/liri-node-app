@@ -11,3 +11,12 @@ exports.spotify = {
   id: process.env.SPOTIFY_ID,
   secret: process.env.SPOTIFY_SECRET
 };
+
+// OMDb API  key: 2deee733
+
+// Spotify info: 
+//schoolNodep project
+
+//Client ID a87fd28cc96043bc8fa851ea578d2ad3
+//Client Secret e1f80e12760f4399a772c3647c6bcded 
+ 

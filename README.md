@@ -49,3 +49,4 @@ Node JS, jQuery, JavaScript, Twitter API, Spotify API, OMDB API.
 
 
 ![Screen Shot](https://github.com/dinaizida/liri-node-app/blob/master/assets/images/git.png)
+

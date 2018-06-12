@@ -21,6 +21,8 @@ Artist(s)
 The song's name
 A preview link of the song from Spotify
 The album that the song is from
+
+If no song is provided then your program will default to "The Sign" by Ace of Base.
   
 -liri.js movie-this '<movie name here>'
   This will output the following information to your terminal/bash window:
@@ -34,8 +36,12 @@ The album that the song is from
   * Plot of the movie.
   * Actors in the movie.
   
+  If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
+
 -liri.js do-what-it-says
 LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
+
+In addition to logging the data to your terminal/bash window, output the data to a .txt file called log.txt.
   
 # Technologies Used: 
 

@@ -53,12 +53,25 @@ function twitter(parameter){
 		
         if (!error) {
             for (i = 0; i < 20; i ++){
-                console.log("Tweet: " + "'" + tweets[i].text + "'" + " Created At: " + tweets[i].created_at);
+
+				var tweetsData = ('Number: ' + (i + 1) + '\n' + tweets[i].created_at + '\n' + tweets[i].text + '\n');
+                console.log(tweetsData);
+				
+				
+				fs.appendFile("log.txt", tweetsData, function(err) {
+	  
+					// Otherwise, it will print: "movies.txt was updated!"
+					console.log("log.txt was updated!");
+				  
+				  });
             }
         } else {
             console.log(error);
         }
-    });
+	});
+	
+	
+	  
 
 }
 
@@ -80,6 +93,33 @@ function spotify(parameter){
 		console.log("Song name: " + data.tracks.items[0].name);
 		console.log("Link Preview: " + data.tracks.items[0].preview_url);
 		console.log("Album: " + data.tracks.items[0].album.name);
+
+
+
+		fs.appendFile("log.txt", '\n'+ '\n'+  "Spotify Data for the song:" + parameter + '\n' +'\n'+ "Artist: " + data.tracks.items[0].artists[0].name +'\n', function(err) {
+	  
+			
+			console.log("log.txt was updated!");
+		  
+		  });
+		  fs.appendFile("log.txt", '\n'+ "Song name: " + data.tracks.items[0].name +'\n', function(err) {
+	  
+			
+			console.log("log.txt was updated!");
+		  
+		  });
+		  fs.appendFile("log.txt", '\n'+ "Link Preview: " + data.tracks.items[0].preview_url +'\n', function(err) {
+	  
+			
+			console.log("log.txt was updated!");
+		  
+		  });
+		  fs.appendFile("log.txt", '\n'+ "Album: " + data.tracks.items[0].album.name +'\n', function(err) {
+	  
+			
+			console.log("log.txt was updated!");
+		  
+		  });
     });
    
 }
@@ -102,7 +142,51 @@ function movie(parameter){
 		    console.log("Country where the movie was produced: " + JSON.parse(body).Country);
 		    console.log("Language of the movie: " + JSON.parse(body).Language);
 		    console.log("Plot of the movie: " + JSON.parse(body).Plot);
-		    console.log("Actors in the movie: " + JSON.parse(body).Actors);
+			console.log("Actors in the movie: " + JSON.parse(body).Actors);
+			
+			fs.appendFile("log.txt", '\n'+ '\n'+  "Movie Data for the movie:" + parameter + '\n' +'\n'+ "Title of the movie: " + JSON.parse(body).Title +'\n', function(err) {
+	  
+				console.log("log.txt was updated!");
+			  
+			  });
+
+			fs.appendFile("log.txt", '\n'+ "Year the movie came out: " + JSON.parse(body).Year +'\n', function(err) {
+	  
+				console.log("log.txt was updated!");
+			  
+			  });
+
+			  fs.appendFile("log.txt", '\n'+ "IMDB Rating of the movie: " + JSON.parse(body).imdbRating +'\n', function(err) {
+	  
+				console.log("log.txt was updated!");
+			  
+			  });
+			  fs.appendFile("log.txt", '\n'+ "Rotten Tomatoes Rating of the movie: " + JSON.parse(body).Ratings[1].Value +'\n', function(err) {
+	  
+				console.log("log.txt was updated!");
+			  
+			  });  
+			  fs.appendFile("log.txt", '\n'+ "Country where the movie was produced: " + JSON.parse(body).Country +'\n', function(err) {
+	  
+				console.log("log.txt was updated!");
+			  
+			  });
+			  fs.appendFile("log.txt", '\n'+ "Language of the movie: " + JSON.parse(body).Language +'\n', function(err) {
+	  
+				console.log("log.txt was updated!");
+			  
+			  });
+			  fs.appendFile("log.txt", '\n'+ "Plot of the movie: " + JSON.parse(body).Plot +'\n', function(err) {
+	  
+				console.log("log.txt was updated!");
+			  
+			  });
+			  fs.appendFile("log.txt", '\n'+ "Actors in the movie: " + JSON.parse(body).Actors +'\n', function(err) {
+	  
+				console.log("log.txt was updated!");
+			  
+			  });
+			
 		}
 	});
 

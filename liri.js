@@ -67,7 +67,7 @@ function spotify(parameter){
 	var spotify = new Spotify(keys.spotify);
 
 	if (!parameter){
-		parameter = 'The Sign';
+		parameter = "The Sign";
 	}
 	spotify.search({ type: 'track', query: parameter }, function(err, data) {
 		if (err){
@@ -85,7 +85,27 @@ function spotify(parameter){
 }
 function movie(parameter){
 
-	
+	if (!parameter){
+		parameter = 'Mr. Nobody';
+	}
+
+	var queryUrl = "http://www.omdbapi.com/?t=" + parameter + "&y=&plot=short&apikey=trilogy";
+
+    request(queryUrl, function(error, response, body) {
+		
+		if (!error && response.statusCode === 200) {
+
+		    console.log("Title of the movie: " + JSON.parse(body).Title);
+		    console.log("Year the movie came out: " + JSON.parse(body).Year);
+		    console.log("IMDB Rating of the movie: " + JSON.parse(body).imdbRating);
+		    console.log("Rotten Tomatoes Rating of the movie: " + JSON.parse(body).Ratings[1].Value);
+		    console.log("Country where the movie was produced: " + JSON.parse(body).Country);
+		    console.log("Language of the movie: " + JSON.parse(body).Language);
+		    console.log("Plot of the movie: " + JSON.parse(body).Plot);
+		    console.log("Actors in the movie: " + JSON.parse(body).Actors);
+		}
+	});
+
     
 }
 function doit(){

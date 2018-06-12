@@ -109,5 +109,30 @@ function movie(parameter){
     
 }
 function doit(){
-    
+	
+	fs.readFile("random.txt", "utf8", function(err, data){ 
+
+		if(err){
+			return console.log(err);
+		}
+		var array = data.split(',');
+		action = array[0];
+		parameter = array[1];
+
+		var spotify = new Spotify(keys.spotify);
+
+		spotify.search({ type: 'track', query: parameter }, function(err, data) {
+		if (err){
+			console.log('Error occurred: ' + err);
+			return;
+		}
+		
+		console.log("Artist: " + data.tracks.items[0].artists[0].name);
+		console.log("Song name: " + data.tracks.items[0].name);
+		console.log("Link Preview: " + data.tracks.items[0].preview_url);
+		console.log("Album: " + data.tracks.items[0].album.name);
+    });
+      
+	});
+
 }

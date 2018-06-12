@@ -48,5 +48,10 @@ In addition to logging the data to your terminal/bash window, output the data to
 Node JS, jQuery, JavaScript, Twitter API, Spotify API, OMDB API. 
 
 
+Screenshot of the output.
+
+
+
+
 ![Screen Shot](https://github.com/dinaizida/liri-node-app/blob/master/assets/images/git.png)
 

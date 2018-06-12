@@ -48,4 +48,4 @@ In addition to logging the data to your terminal/bash window, output the data to
 Node JS, jQuery, JavaScript, Twitter API, Spotify API, OMDB API. 
 
 
-![Screen Shot](https://github.com/dinaizida/TrainTime/blob/master/assets/images/git.png
+![Screen Shot](https://github.com/dinaizida/TrainTime/blob/master/assets/images/git.png)

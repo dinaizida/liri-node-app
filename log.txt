@@ -98,3 +98,58 @@ Language of the movie: English, Mohawk
 Plot of the movie: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
 
 Actors in the movie: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+
+Spotify Data for the song:Malibu
+
+Artist: Miley Cyrus
+
+Song name: Malibu
+
+Link Preview: https://p.scdn.co/mp3-preview/85e214544e55a8fc19d57335f304792804421501?cid=a87fd28cc96043bc8fa851ea578d2ad3
+
+Album: Malibu
+
+
+Spotify Data for the song:The
+
+Artist: Zedd
+
+Song name: The Middle
+
+Album: The Middle
+
+Link Preview: null
+
+
+Spotify Data for the song:The
+
+Artist: Zedd
+
+Link Preview: null
+
+Album: The Middle
+
+Song name: The Middle
+
+
+Spotify Data for the song:The Sign
+
+Artist: Ty Dolla $ign
+
+Link Preview: https://p.scdn.co/mp3-preview/70f126c139847335bc03c756c55b80c99892268e?cid=a87fd28cc96043bc8fa851ea578d2ad3
+
+Album: Or Nah (feat. The Weeknd, Wiz Khalifa and DJ Mustard) [Remix Version]
+
+Song name: Or Nah (feat. The Weeknd, Wiz Khalifa and DJ Mustard) - Remix
+
+
+Spotify Data for the song:Malibu
+
+Artist: Miley Cyrus
+
+Link Preview: https://p.scdn.co/mp3-preview/85e214544e55a8fc19d57335f304792804421501?cid=a87fd28cc96043bc8fa851ea578d2ad3
+
+Song name: Malibu
+
+Album: Malibu

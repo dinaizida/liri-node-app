@@ -76,11 +76,12 @@ function twitter(parameter){
 }
 
 function spotify(parameter){
+	
     // as a parameter used Malibu (Miley Cyrus)
 	var spotify = new Spotify(keys.spotify);
 
 	if (!parameter){
-		parameter = "The Sign";
+		parameter = "Malibu";
 	}
 	spotify.search({ type: 'track', query: parameter }, function(err, data) {
 		if (err){

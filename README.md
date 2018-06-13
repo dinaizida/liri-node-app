@@ -45,7 +45,7 @@ In addition to logging the data to your terminal/bash window, output the data to
   
 # Technologies Used: 
 
-Node JS, jQuery, JavaScript, Twitter API, Spotify API, OMDB API. 
+Node JS, NPM, JavaScript, Twitter API, Spotify API, OMDB API. 
 
 
 Screenshot of the output.
